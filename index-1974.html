@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <style>
+            body{margin:0px; padding:0px;}
+            svg{display:block; width:100vw;}
+            .weight0 .outer{ fill:black; }
+.weight0 .mid{ fill:black; }
+.weight0 .inner{ fill:black; }
+
+.weight1 .outer{ fill:black; }
+.weight1 .mid{ fill:black; }
+.weight1 .inner{ fill:white; stroke:black; }
+
+.weight2 .outer{ fill:black; }
+.weight2 .mid{ fill:white; stroke:black; }
+.weight2 .inner{ fill:black; }
+
+.weight3 .outer{ fill:black; }
+.weight3 .mid{ fill:white; stroke:black; }
+.weight3 .inner{ fill:white; stroke:black; }
+
+.weight4 .outer{ fill:white; stroke:black; }
+.weight4 .mid{ fill:black; }
+.weight4 .inner{ fill:black; }
+
+.weight5 .outer{ fill:white; stroke:black; }
+.weight5 .mid{ fill:black; }
+.weight5 .inner{ fill:white; stroke:black; }
+
+.weight6 .outer{ fill:white; stroke:black; }
+.weight6 .mid{ fill:white; stroke:black; }
+.weight6 .inner{ fill:black; }
+
+.weight7 .outer{ fill:white; stroke:black; }
+.weight7 .mid{ fill:white; stroke:black; }
+.weight7 .inner{ fill:white; stroke:black; }
+        </style>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <h1>JURRIAAN 1974</h1>
+        <input id="text-input" type="text"></input>
+        <input id="weight-input" min="0" max="26" step="1" type="range"></input>
+        <svg viewBox="0 0 500 1000">
+                <symbol id="_0" serif:id="0">
+                    <path class="outer" d="M840 4320h140v-140H860v-100h220v340H740v-340h100v240z" transform="translate(-740 -4080)"/>
+                    <path class="mid" d="M880 4100v60h120v180H820v-240h-60v300h300v-300H880z" transform="translate(-740 -4080)"/>
+                    <path class="inner" d="M900 4120h140v260H780v-260h20v240h220v-220H900v-20z" transform="translate(-740 -4080)"/>
+                  </symbol>
+                  <symbol id="_9" serif:id="9">
+                    <path class="outer" d="M480 4180v20h120v100H380v-220h340v340H380v-100h240v-140H480z" transform="translate(-380 -4080)"/>
+                    <path class="mid" d="M460 4160h180v180H400v60h300v-300H400v180h180v-60H460v-60z" transform="translate(-380 -4080)"/>
+                    <path class="inner" d="M440 4140h220v220H420v20h260v-260H420v140h140v-20H440v-100z" transform="translate(-380 -4080)"/>
+                  </symbol>
+                  <symbol id="_8" serif:id="8">
+                    <path class="outer" d="M120 4420H20v-340h220v100H120v20h140v-120h100v340H140v-100h120v-20H120v120z" transform="translate(-20 -4080)"/>
+                    <path class="mid" d="M100 4400v-120h180v60H160v60h180v-300h-60v120H100v-60h120v-60H40v300h60z" transform="translate(-20 -4080)"/>
+                    <path class="inner" d="M80 4380v-120h220v100H180v20h140v-260h-20v120H80v-100h120v-20H60v260h20z" transform="translate(-20 -4080)"/>
+                  </symbol>
+                  <symbol id="_7" serif:id="7">
+                    <path class="outer" d="M1180 3820H940v-100h340v220h-120v120h-100v-220h120v-20z" transform="translate(-940 -3720)"/>
+                    <path class="mid" d="M960 3800v-60h300v180h-120v120h-60v-180h120v-60H960z" transform="translate(-940 -3720)"/>
+                    <path class="inner" d="M980 3780v-20h260v140h-120v120h-20v-140h120v-100H980z" transform="translate(-940 -3720)"/>
+                  </symbol>
+                  <symbol id="_6" serif:id="6">
+                    <path class="outer" d="M680 3820h240v-100H580v340h340v-220H700v100h120v20H680v-140z" transform="translate(-580 -3720)"/>
+                    <path class="mid" d="M900 3800v-60H600v300h300v-180H720v60h120v60H660v-180h240z" transform="translate(-580 -3720)"/>
+                    <path class="inner" d="M880 3780v-20H620v260h260v-140H740v20h120v100H640v-220h240z" transform="translate(-580 -3720)"/>
+                  </symbol>
+                  <symbol id="_5" serif:id="5">
+                    <path class="outer" d="M320 3820h240v-100H220v220h240v20H220v100h340v-220H320v-20z" transform="translate(-220 -3720)"/>
+                    <path class="mid" d="M300 3800h240v-60H240v180h240v60H240v60h300v-180H300v-60z" transform="translate(-220 -3720)"/>
+                    <path class="inner" d="M520 3780v-20H260v140h240v100H260v20h260v-140H280v-100h240z" transform="translate(-220 -3720)"/>
+                  </symbol>
+                  <symbol id="_4" serif:id="4">
+                    <path class="outer" d="M980 3580H740v-220h100v120h140v-120h100v340H980v-120z" transform="translate(-740 -3360)"/>
+                    <path class="mid" d="M1000 3680v-120H760v-180h60v120h180v-120h60v300h-60z" transform="translate(-740 -3360)"/>
+                    <path class="inner" d="M1020 3660h20v-260h-20v120H800v-120h-20v140h240v120z" transform="translate(-740 -3360)"/>
+                  </symbol>
+                  <symbol id="_3" serif:id="3">
+                    <path class="outer" d="M380 3460h240v20H380v100h240v20H380v100h340v-340H380v100z" transform="translate(-380 -3360)"/>
+                    <path class="mid" d="M400 3440v-60h300v300H400v-60h240v-60H400v-60h240v-60H400z" transform="translate(-380 -3360)"/>
+                    <path class="inner" d="M420 3420v-20h260v260H420v-20h240v-100H420v-20h240v-100H420z" transform="translate(-380 -3360)"/>
+                  </symbol>
+                  <symbol id="_2" serif:id="2">
+                    <path class="outer" d="M20 3460h240v20H20v220h340v-100H120v-20h240v-220H20v100z" transform="translate(-20 -3360)"/>
+                    <path class="mid" d="M40 3440v-60h300v180H100v60h240v60H40v-180h240v-60H40z" transform="translate(-20 -3360)"/>
+                    <path class="inner" d="M60 3420v-20h260v140H80v100h240v20H60v-140h240v-100H60z" transform="translate(-20 -3360)"/>
+                  </symbol>
+                  <symbol id="_1" serif:id="1">
+                    <path class="outer" d="M940 3100h120v140H940v100h340v-100h-120v-140h120v-100H940v100z" transform="translate(-940 -3000)"/>
+                    <path class="mid" d="M960 3080v-60h300v60h-120v180h120v60H960v-60h120v-180H960z" transform="translate(-940 -3000)"/>
+                    <path class="inner" d="M980 3060v-20h260v20h-120v220h120v20H980v-20h120v-220H980z" transform="translate(-940 -3000)"/>
+                  </symbol>
+                  <symbol id="_z">
+                    <path class="outer" d="M820 3100H580v-100h340v220H680v20h240v100H580v-220h240v-20z" transform="translate(-580 -3000)"/>
+                    <path class="mid" d="M600 3020h300v180H660v60h240v60H600v-180h240v-60H600v-60z" transform="translate(-580 -3000)"/>
+                    <path class="inner" d="M620 3040v20h240v100H620v140h260v-20H640v-100h240v-140H620z" transform="translate(-580 -3000)"/>
+                  </symbol>
+                  <symbol id="_y">
+                    <path class="outer" d="M320 3000v120h140v-120h100v340H220v-100h240v-20H220v-220h100z" transform="translate(-220 -3000)"/>
+                    <path class="mid" d="M240 3020h60v120h180v-120h60v300H240v-60h240v-60H240v-180z" transform="translate(-220 -3000)"/>
+                    <path class="inner" d="M260 3040h20v120h220v-120h20v260H260v-20h240v-100H260v-140z" transform="translate(-220 -3000)"/>
+                  </symbol>
+                  <symbol id="_x">
+                    <path class="outer" d="M840 2760h20v-120h100v120h20v-120h100v340H980v-120h-20v120H860v-120h-20v120H740v-340h100v120z" transform="translate(-740 -2640)"/>
+                    <path class="mid" d="M760 2660h60v120h60v-120h60v120h60v-120h60v300h-60v-120h-60v120h-60v-120h-60v120h-60v-300z" transform="translate(-740 -2640)"/>
+                    <path class="inner" d="M780 2680h20v120h100v-120h20v120h100v-120h20v260h-20v-120H920v120h-20v-120H800v120h-20v-260z" transform="translate(-740 -2640)"/>
+                  </symbol>
+                  <symbol id="_w">
+                    <path class="outer" d="M480 2640v240h20v-240h100v240h20v-240h100v340H380v-340h100z" transform="translate(-380 -2640)"/>
+                    <path class="mid" d="M400 2660h60v240h60v-240h60v240h60v-240h60v300H400v-300z" transform="translate(-380 -2640)"/>
+                    <path class="inner" d="M420 2680h20v240h100v-240h20v240h100v-240h20v260H420v-260z" transform="translate(-380 -2640)"/>
+                  </symbol>
+                  <symbol id="_v">
+                    <path class="outer" d="M240 2860h120v-220H140v100h120v20H140v120h-20v-240H20v340h220v-120z" transform="translate(-20 -2640)"/>
+                    <path class="mid" d="M40 2660h60v240h60v-120h120v-60H160v-60h180v180H220v120H40v-300z" transform="translate(-20 -2640)"/>
+                    <path class="inner" d="M60 2680h20v240h100v-120h120v-100H180v-20h140v140H200v120H60v-260z" transform="translate(-20 -2640)"/>
+                  </symbol>
+                  <symbol id="_u">
+                    <path class="outer" d="M1160 2380v-100H940v220h120v120h220v-340h-100v240h-20v-120h-120v-20h120z" transform="translate(-940 -2280)"/>
+                    <path class="mid" d="M1140 2300v60h-120v60h120v120h60v-240h60v300h-180v-120H960v-180h180z" transform="translate(-940 -2280)"/>
+                    <path class="inner" d="M1120 2320v20h-120v100h120v120h100v-240h20v260h-140v-120H980v-140h140z" transform="translate(-940 -2280)"/>
+                  </symbol>
+                  <symbol id="_t">
+                    <path class="outer" d="M680 2380h20v140H580v100h340v-100H800v-140h20v120h100v-220H580v220h100v-120z" transform="translate(-580 -2280)"/>
+                    <path class="mid" d="M600 2300h300v180h-60v-120h-60v180h120v60H600v-60h120v-180h-60v120h-60v-180z" transform="translate(-580 -2280)"/>
+                    <path class="inner" d="M620 2320h260v140h-20v-120H760v220h120v20H620v-20h120v-220H640v120h-20v-140z" transform="translate(-580 -2280)"/>
+                  </symbol>
+                  <symbol id="_s">
+                    <path class="outer" d="M320 2380h240v-100H220v220h240v20H220v100h340v-220H320v-20z" transform="translate(-220 -2280)"/>
+                    <path class="mid" d="M540 2300v60H300v60h240v180H240v-60h240v-60H240v-180h300z" transform="translate(-220 -2280)"/>
+                    <path class="inner" d="M520 2320v20H280v100h240v140H260v-20h240v-100H260v-140h260z" transform="translate(-220 -2280)"/>
+                  </symbol>
+                  <symbol id="_r">
+                    <path class="outer" d="M840 2020h140v20H860v220h100v-120h120v-220H740v340h100v-240z" transform="translate(-740 -1920)"/>
+                    <path class="mid" d="M760 2240h60v-240h180v60H880v180h60v-120h120v-180H760v300z" transform="translate(-740 -1920)"/>
+                    <path class="inner" d="M780 2220h20v-240h220v100H900v140h20v-120h120v-140H780v260z" transform="translate(-740 -1920)"/>
+                  </symbol>
+                  <symbol id="_q">
+                    <path class="outer" d="M620 2020H480v140h120v100H380v-340h340v340H620v-240z" transform="translate(-380 -1920)"/>
+                    <path class="mid" d="M640 2000v240h60v-300H400v300h180v-60H460v-180h180z" transform="translate(-380 -1920)"/>
+                    <path class="inner" d="M660 2220h20v-260H420v260h140v-20H440v-220h220v240z" transform="translate(-380 -1920)"/>
+                  </symbol>
+                  <symbol id="_p">
+                    <path class="outer" d="M120 2040v120h20v-120h120v-20H20v-100h340v220H240v120H20v-220h100z" transform="translate(-20 -1920)"/>
+                    <path class="mid" d="M40 2060h60v120h60v-120h120v-60H40v-60h300v180H220v120H40v-180z" transform="translate(-20 -1920)"/>
+                    <path class="inner" d="M60 2080h20v120h100v-120h120v-100H60v-20h260v140H200v120H60v-140z" transform="translate(-20 -1920)"/>
+                  </symbol>
+                  <symbol id="_o">
+                    <path class="outer" d="M1060 1560v240h140v-140h-120v-100h220v340H960v-340h100z" transform="translate(-960 -1560)"/>
+                    <path class="mid" d="M1040 1580v240h180v-180h-120v-60h180v300H980v-300h60z" transform="translate(-960 -1560)"/>
+                    <path class="inner" d="M1000 1600h20v240h220v-220h-120v-20h140v260h-260v-260z" transform="translate(-960 -1560)"/>
+                  </symbol>
+                  <symbol id="_n">
+                    <path class="outer" d="M680 1660h20v240h221v-340H820v240h-20v-240H581v340h99v-240z" transform="translate(-581 -1560)"/>
+                    <path class="mid" d="M600 1880h60v-240h60v240h180v-300h-60v240h-60v-240H600v300z" transform="translate(-581 -1560)"/>
+                    <path class="inner" d="M620 1860h20v-240h100v240h140v-260h-20v240H760v-240H620v260z" transform="translate(-581 -1560)"/>
+                  </symbol>
+                  <symbol id="_m">
+                    <path class="outer" d="M220 1560h340v340H460v-240h-20v240H340v-240h-20v240H220v-340z" transform="translate(-220 -1560)"/>
+                    <path class="mid" d="M240 1580h300v300h-60v-240h-60v240h-60v-240h-60v240h-60v-300z" transform="translate(-220 -1560)"/>
+                    <path class="inner" d="M260 1600h260v260h-20v-240H400v240h-20v-240H280v240h-20v-260z" transform="translate(-220 -1560)"/>
+                  </symbol>
+                  <symbol id="_l">
+                    <path class="outer" d="M740 1200h220v100H840v140h140v-120h100v220H740v-340z" transform="translate(-740 -1200)"/>
+                    <path class="mid" d="M760 1220h180v60H820v180h180v-120h60v180H760v-300z" transform="translate(-740 -1200)"/>
+                    <path class="inner" d="M920 1240H780v260h260v-140h-20v120H800v-220h120v-20z" transform="translate(-740 -1200)"/>
+                  </symbol>
+                  <symbol id="_k">
+                    <path class="outer" d="M380 1200h100v120h20v-120h220v100H600v20h120v220H620v-120H480v120H380v-340z" transform="translate(-380 -1200)"/>
+                    <path class="mid" d="M400 1220h60v120h60v-120h180v60H580v60h120v180h-60v-120H460v120h-60v-300z" transform="translate(-380 -1200)"/>
+                    <path class="inner" d="M420 1240h20v120h100v-120h140v20H560v100h120v140h-20v-120H440v120h-20v-260z" transform="translate(-380 -1200)"/>
+                  </symbol>
+                  <symbol id="_j">
+                    <path class="outer" d="M360 1200v340H20v-220h100v120h140v-140h-20v120H140v-220h220z" transform="translate(-20 -1200)"/>
+                    <path class="mid" d="M160 1220h180v300H40v-180h60v120h180v-180h-60v120h-60v-180z" transform="translate(-20 -1200)"/>
+                    <path class="inner" d="M180 1240h140v260H60v-140h20v120h220v-220H200v120h-20v-140z" transform="translate(-20 -1200)"/>
+                  </symbol>
+                  <symbol id="_i">
+                    <path class="outer" d="M940 840h340v100h-120v20h120v100h-240v20h240v100H940V960h120v-20H940V840z" transform="translate(-940 -840)"/>
+                    <path class="mid" d="M960 860h300v60h-120v60h120v60h-240v60h240v60H960V980h120v-60H960v-60z" transform="translate(-940 -840)"/>
+                    <path class="inner" d="M980 880h260v20h-120v100h120v20h-240v100h240v20H980v-140h120V900H980v-20z" transform="translate(-940 -840)"/>
+                  </symbol>
+                  <symbol id="_h">
+                    <path class="outer" d="M580 840h340v100H680v20h240v220H820v-120H680v120H580V840z" transform="translate(-580 -840)"/>
+                    <path class="mid" d="M600 860h300v60H660v60h240v180h-60v-120H660v120h-60V860z" transform="translate(-580 -840)"/>
+                    <path class="inner" d="M620 880h260v20H640v100h240v140h-20v-120H640v120h-20V880z" transform="translate(-580 -840)"/>
+                  </symbol>
+                  <symbol id="_g">
+                    <path class="outer" d="M220 840h340v100H320v140h140v-20H340V960h220v220H220V840z" transform="translate(-220 -840)"/>
+                    <path class="mid" d="M540 860H240v300h300V980H360v60h120v60H300V920h240v-60z" transform="translate(-220 -840)"/>
+                    <path class="inner" d="M520 880H260v260h260v-140H380v20h120v100H280V900h240v-20z" transform="translate(-220 -840)"/>
+                  </symbol>
+                  <symbol id="_f">
+                    <path class="outer" d="M740 480h340v100H840v140h20V600h220v100H960v120H740V480z" transform="translate(-740 -480)"/>
+                    <path class="mid" d="M760 500h300v60H820v180h60V620h180v60H940v120H760V500z" transform="translate(-740 -480)"/>
+                    <path class="inner" d="M1040 520H780v260h140V660h120v-20H900v120H800V540h240v-20z" transform="translate(-740 -480)"/>
+                  </symbol>
+                  <symbol id="_e">
+                    <path class="outer" d="M380 480h340v220H500V600h120v-20H480v140h240v100H380V480z" transform="translate(-380 -480)"/>
+                    <path class="mid" d="M400 500h300v180H520v-60h120v-60H460v180h240v60H400V500z" transform="translate(-380 -480)"/>
+                    <path class="inner" d="M420 520h260v140H540v-20h120V540H440v220h240v20H420V520z" transform="translate(-380 -480)"/>
+                  </symbol>
+                  <symbol id="_d">
+                    <path class="outer" d="M20 480h340v340H140V600h100v120h20V580H120v240H20V480z" transform="translate(-20 -480)"/>
+                    <path class="mid" d="M40 500h300v300H160V620h60v120h60V560H100v240H40V500z" transform="translate(-20 -480)"/>
+                    <path class="inner" d="M60 780V520h260v260H180V640h20v120h100V540H80v240H60z" transform="translate(-20 -480)"/>
+                  </symbol>
+                  <symbol id="_c">
+                    <path class="outer" d="M960 120h220v220h-100V220h-20v140h140V240h100v220H960V120z" transform="translate(-960 -120)"/>
+                    <path class="mid" d="M980 140h180v180h-60V200h-60v180h180V260h60v180H980V140z" transform="translate(-960 -120)"/>
+                    <path class="inner" d="M1000 160h140v140h-20V180h-100v220h220V280h20v140h-260V160z" transform="translate(-960 -120)"/>
+                  </symbol>
+                  <symbol id="_b">
+                    <path class="outer" d="M600 460V120h340v340H720V360h120v-20H720V240h120v-20H700v240H600z" transform="translate(-600 -120)"/>
+                    <path class="mid" d="M620 440V140h300v300H740v-60h120v-60H740v-60h120v-60H680v240h-60z" transform="translate(-600 -120)"/>
+                    <path class="inner" d="M640 420V160h260v260H760v-20h120V300H760v-20h120V180H660v240h-20z" transform="translate(-600 -120)"/>
+                  </symbol>
+                  <symbol id="_a">
+                    <path class="outer" d="M460 220H220V120h340v340H220V240h220v100H320v20h140V220z" transform="translate(-220 -120)" serif:id="outer"/>
+                    <path class="mid" d="M240 200v-60h300v300H240V260h180v60H300v60h180V200H240z" transform="translate(-220 -120)" serif:class="mid"/>
+                    <path class="inner" d="M260 180v-20h260v260H260V280h140v20H280v100h220V180H260z" transform="translate(-220 -120)" serif:id="inner"/>
+                  </symbol>
+        </svg>
+    </body>
+</html>
