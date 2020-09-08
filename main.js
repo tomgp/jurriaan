@@ -9,28 +9,39 @@ d3.selectAll('symbol').each(function(){
 d3.select('#text-input')
     .on('keyup', update);
 
-d3.select('#weight-input')
+d3.selectAll('.variant-select')
+    .on('change', update);
+
+d3.selectAll('#size-select')
     .on('change', update);
 
 function write(type){
-    const lineLength = 8;
     const charDim = 340;
+    const lineLength = 50 - Number(d3.select('#size-select').node().value);
+    
     const scale = svgWidth/charDim /lineLength
-    const chars = type.split('');
-
     
     const selection  = svg.selectAll('g')
-        .data(chars);
+        .data(type.split(''));
     
     selection.enter()
         .append('g')
-            .attr('class',(d,i)=>`weight${Math.floor(i/lineLength)%7}`)
+            .attr('class',(d,i)=>{
+                const w = Math.floor(i)%7
+                return `weight${w}`;
+            })
             .attr('transform', (d,i)=> `scale(${scale}) translate(${(i%lineLength)*charDim},${Math.floor(i/lineLength)*charDim})`)
             .html(d=>{
                 return symbols[`_${d}`]
             });
 
-    selection.html(d=>{
+    selection
+        .attr('class',(d,i)=>{
+            const w = Math.floor(i)%7
+            return `weight${w}`;
+        })
+        .attr('transform', (d,i)=> `scale(${scale}) translate(${(i%lineLength)*charDim},${Math.floor(i/lineLength)*charDim})`)
+        .html(d=>{
         return symbols[`_${d}`]
     })
 
@@ -38,14 +49,25 @@ function write(type){
 }
 
 function decorate(){
-    const weight = d3.select('#weight-input').node().value;
+    const weight = d3.select('.variant-select:checked').node().value;
+    console.log(weight);
     d3.selectAll('svg g')
-        .attr('class',`weight${weight}`);
+        .attr('class',(d,i)=>{
+            let w = weight;
+            if(weight == 'no'){
+                w = Math.floor(i)%8;
+            }
+            return `weight${w}`;
+        });
 }
 
 function update(){
     write(String(d3.select('#text-input').node().value).toLocaleLowerCase());
-    //decorate();
+    decorate();
 }
 
-write('jurriaanschroferjurriaanschroferjurriaanschroferjurriaanschroferjurriaanschroferjurriaanschroferjurriaanschroferjurriaanschrofer')
+d3.select('#text-input').attr('value',
+    `letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt letters op matt`
+    .toLocaleLowerCase());
+
+update();

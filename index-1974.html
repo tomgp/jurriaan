@@ -1,48 +1,100 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://www.toffeemilkshake.co.uk/words/assets/style.css">
         <style>
-            body{margin:0px; padding:0px;}
+            body{margin:0px; padding:0px; font-family: sans-serif;}
             svg{display:block; width:100vw;}
-            .weight0 .outer{ fill:black; }
-.weight0 .mid{ fill:black; }
-.weight0 .inner{ fill:black; }
+            #text-input{
+                width:80vw;
+                font-size: 1rem;
+                border:none;
+                border-bottom: 1px dashed #0028ff;
+                color: #0028ff;
+            }
+            #size-select{
+                width:80vw
+            }
 
-.weight1 .outer{ fill:black; }
-.weight1 .mid{ fill:black; }
-.weight1 .inner{ fill:white; stroke:black; }
+            .about-link{
+                margin-left: 10vw; 
+            }
+            .setter{margin-left:10vw;}
+            label{margin-top: 20px; display: inline-block;}
+            .body-copy{
+                width:100vw;
+                margin-top:30px;
+            }
+            .body-copy p,
+            .body-copy blockquote
+            {
+                margin-left:auto;
+                margin-right:auto;
+                max-width: 600px;
+            }
+            .weight0 .outer{ fill:#0028ff; }
+            .weight0 .mid{ fill:#0028ff; }
+            .weight0 .inner{ fill:#0028ff; }
 
-.weight2 .outer{ fill:black; }
-.weight2 .mid{ fill:white; stroke:black; }
-.weight2 .inner{ fill:black; }
+            .weight1 .outer{ fill:#0028ff; }
+            .weight1 .mid{ fill:#0028ff; }
+            .weight1 .inner{ fill:white; stroke:#0028ff; }
 
-.weight3 .outer{ fill:black; }
-.weight3 .mid{ fill:white; stroke:black; }
-.weight3 .inner{ fill:white; stroke:black; }
+            .weight2 .outer{ fill:#0028ff; }
+            .weight2 .mid{ fill:white; stroke:#0028ff; }
+            .weight2 .inner{ fill:#0028ff; }
 
-.weight4 .outer{ fill:white; stroke:black; }
-.weight4 .mid{ fill:black; }
-.weight4 .inner{ fill:black; }
+            .weight3 .outer{ fill:#0028ff; }
+            .weight3 .mid{ fill:white; stroke:#0028ff; }
+            .weight3 .inner{ fill:white; stroke:#0028ff; }
 
-.weight5 .outer{ fill:white; stroke:black; }
-.weight5 .mid{ fill:black; }
-.weight5 .inner{ fill:white; stroke:black; }
+            .weight4 .outer{ fill:white; stroke:#0028ff; }
+            .weight4 .mid{ fill:#0028ff; }
+            .weight4 .inner{ fill:#0028ff; }
 
-.weight6 .outer{ fill:white; stroke:black; }
-.weight6 .mid{ fill:white; stroke:black; }
-.weight6 .inner{ fill:black; }
+            .weight5 .outer{ fill:white; stroke:#0028ff; }
+            .weight5 .mid{ fill:#0028ff; }
+            .weight5 .inner{ fill:white; stroke:#0028ff; }
 
-.weight7 .outer{ fill:white; stroke:black; }
-.weight7 .mid{ fill:white; stroke:black; }
-.weight7 .inner{ fill:white; stroke:black; }
+            .weight6 .outer{ fill:white; stroke:#0028ff; }
+            .weight6 .mid{ fill:white; stroke:#0028ff; }
+            .weight6 .inner{ fill:#0028ff; }
+
+            .weight7 .outer{ fill:white; stroke:#0028ff; }
+            .weight7 .mid{ fill:white; stroke:#0028ff; }
+            .weight7 .inner{ fill:white; stroke:#0028ff; }
         </style>
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="main.js" defer></script>
     </head>
     <body>
-        <h1>JURRIAAN 1974</h1>
-        <input id="text-input" type="text"></input>
-        <input id="weight-input" min="0" max="26" step="1" type="range"></input>
-        <svg viewBox="0 0 500 1000">
+<div role="main" class="content">
+<article>
+<div class="body" itemprop="articleBody">
+        <h1>Letters based on continuous lines and contours</h1>
+        <p>JURRIAAN SCHROFER 1974</p>
+        <a class="about-link" href="#about">more...</a>
+    <div>
+        <label>TEXT:</label><br><div class="setter"><input id="text-input" type="text"></input></div>
+    </div>
+    <div>
+        <label>VARIANT:</label><br>
+        <div class="setter"><input class="variant-select" type="radio" name="weight" value="7">
+        <input class="variant-select" type="radio" name="weight" value="6">
+        <input class="variant-select" type="radio" name="weight" value="5">
+        <input class="variant-select" type="radio" name="weight" value="3">
+        <input class="variant-select" type="radio" name="weight" value="4">
+        <input class="variant-select" type="radio" name="weight" value="2">
+        <input class="variant-select" type="radio" name="weight" value="1">
+        <input class="variant-select" type="radio" name="weight" value="0">
+        |
+        <input class="variant-select" type="radio" name="weight" value="no" checked>
+        </div>
+    </div>
+    <div>
+        <label>SIZE:</label><br>
+        <div class="setter"><input id="size-select" min="0" max="49" step="1" type="range" value="43"></input></div>
+    </div>
+        <svg viewBox="0 0 500 500">
                 <symbol id="_0" serif:id="0">
                     <path class="outer" d="M840 4320h140v-140H860v-100h220v340H740v-340h100v240z" transform="translate(-740 -4080)"/>
                     <path class="mid" d="M880 4100v60h120v180H820v-240h-60v300h300v-300H880z" transform="translate(-740 -4080)"/>
@@ -224,5 +276,32 @@
                     <path class="inner" d="M260 180v-20h260v260H260V280h140v20H280v100h220V180H260z" transform="translate(-220 -120)" serif:id="inner"/>
                   </symbol>
         </svg>
+
+        <div class="body-copy">
+            <hr>
+        <p id="about">
+            <b>What is this?</b> It's a recreation of some letterforms developed by Dutch typographer Jurriaan Schrofer. I digitized them from <i>Jurriaan Schrofer Restless Typographer</i> published by <a href="">Unit Editions</a> using Affinity Designer.
+        </p>
+        <p>Schrofer doesn't seem to have a Wikipedia entry. This is from the back of the aformentioned book...</p>
+        <blockquote>
+            Jurriaan Schrofer, the Dutch graphic designer, worked for publishing houses, theatre companies and PTT, the Dutch post and telephone company. 
+            He was a pioneer in corporate identity; a designer of photobooks; and art director of the architectural magazine Forum.
+        </blockquote>
+        <blockquote>
+            Schrofer called himself a tinkerer &mdash; a 'bricoleur'. His energy, his inventiveness and his ceaseless quest for new modes of expression made him the quintisential Dutch graphic designer.
+        </blockquote>
+        <p><b>Why is this?</b> I'm interested in the posibilities of variable fonts and I've been thinking a bit 
+        about what the limits are w.r.t. the variability they offer, separately colouring different bits of the letterforms etc.
+        I really like the psychadelic op-art style of Schofers type experiments and thought it might be interesting to 
+        try recreating some of these pre-microcomputer artifacts with today&apos;s web technologies.</p>
+        <p>This is my first stab at doing so.</p>
+        <div class="credit">
+            <a href="/">Tom Pearson</a>
+            <time datetime="2020-09-07 00:00:00 +0000">24 June 2020</time>
+      </div>
+    </div>
+</div>
+</article>
+</div>
     </body>
 </html>
