@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="https://www.toffeemilkshake.co.uk/words/assets/style.css">
         <style>
+            h1{white-space:normal; line-height: 2rem;}
             body{margin:0px; padding:0px; font-family: sans-serif;}
             svg{display:block; width:100vw;}
             #text-input{
@@ -67,12 +68,10 @@
         <script src="main.js" defer></script>
     </head>
     <body>
-<div role="main" class="content">
-<article>
-<div class="body" itemprop="articleBody">
+        <div role="main" class="content">
         <h1>Letters based on continuous lines and contours</h1>
-        <p>JURRIAAN SCHROFER 1974</p>
-        <a class="about-link" href="#about">more...</a>
+        <p>JURRIAAN SCHROFER 1974 (<a href="#about">about this</a>)</p>
+        
     <div>
         <label>TEXT:</label><br><div class="setter"><input id="text-input" type="text"></input></div>
     </div>
@@ -280,28 +279,31 @@
         <div class="body-copy">
             <hr>
         <p id="about">
-            <b>What is this?</b> It's a recreation of some letterforms developed by Dutch typographer Jurriaan Schrofer. I digitized them from <i>Jurriaan Schrofer Restless Typographer</i> published by <a href="">Unit Editions</a> using Affinity Designer.
+            <b>What is this?</b> It's a recreation of some letterforms developed by Dutch typographer Jurriaan Schrofer. I digitized* them from <i>Jurriaan Schrofer Restless Typographer</i> published by <a href="">Unit Editions</a>.
         </p>
         <p>Schrofer doesn't seem to have a Wikipedia entry. This is from the back of the aformentioned book...</p>
         <blockquote>
-            Jurriaan Schrofer, the Dutch graphic designer, worked for publishing houses, theatre companies and PTT, the Dutch post and telephone company. 
+            &quot;Jurriaan Schrofer, the Dutch graphic designer, worked for publishing houses, theatre companies and PTT, the Dutch post and telephone company. 
             He was a pioneer in corporate identity; a designer of photobooks; and art director of the architectural magazine Forum.
         </blockquote>
+        &hellip;
         <blockquote>
-            Schrofer called himself a tinkerer &mdash; a 'bricoleur'. His energy, his inventiveness and his ceaseless quest for new modes of expression made him the quintisential Dutch graphic designer.
+            Schrofer called himself a tinkerer &mdash; a 'bricoleur'. His energy, his inventiveness and his ceaseless quest for new modes of expression made him the quintisential Dutch graphic designer.&quot;
         </blockquote>
         <p><b>Why is this?</b> I'm interested in the posibilities of variable fonts and I've been thinking a bit 
         about what the limits are w.r.t. the variability they offer, separately colouring different bits of the letterforms etc.
-        I really like the psychadelic op-art style of Schofers type experiments and thought it might be interesting to 
+        I really like the psychadelic op-art style of Schofer&apos;s type experiments and in the spirit of tinkering thought it might be interesting to 
         try recreating some of these pre-microcomputer artifacts with today&apos;s web technologies.</p>
         <p>This is my first stab at doing so.</p>
-        <div class="credit">
+        <hr>
+        <p>* The resulting SVG is a bit odd thanks to the vagaries of SVG producing and oprtimising software &mdash; i know how to avoid this in the future but for my purposes here it's not really material.</p>
+    </div>
+    <footer>
+    <div class="credit">
             <a href="/">Tom Pearson</a>
             <time datetime="2020-09-07 00:00:00 +0000">24 June 2020</time>
-      </div>
     </div>
-</div>
-</article>
+    </footer>
 </div>
     </body>
 </html>
